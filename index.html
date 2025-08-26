@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +25,11 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            /* F1 Background Image */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lewis_Hamilton_2016_Malaysia_podium_2.jpg/1920px-Lewis_Hamilton_2016_Malaysia_podium_2.jpg'); /* F1 Car image with dark overlay */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
         }
 
         h1, h2 {
@@ -34,7 +39,7 @@
         }
 
         .header {
-            background-color: #000;
+            background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent header */
             padding: 1rem 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             position: sticky;
@@ -84,7 +89,7 @@
 
         .page-section {
             display: none; /* Hidden by default */
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: rgba(255, 255, 255, 0.05); /* Slightly transparent white for content sections */
             backdrop-filter: blur(5px);
             border-radius: 15px;
             padding: 40px;
